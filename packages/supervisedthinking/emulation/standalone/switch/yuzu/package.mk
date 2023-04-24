@@ -2,7 +2,7 @@
 # Copyright (C) 2022-present Frank Hartung (supervisedthinking (@) gmail.com)
 
 PKG_NAME="yuzu"
-PKG_VERSION="dbdf48f997bb6d5256d06487c9b27b955c69ceb5" #r0.1270
+PKG_VERSION="mainline-0-1270" #r0.1270
 PKG_ARCH="x86_64"
 PKG_LICENSE="GPL-3.0-or-later"
 PKG_SITE="https://yuzu-emu.org/"
