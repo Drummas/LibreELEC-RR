@@ -19,63 +19,24 @@ OEM_APPLICATIONS_RPI=""
 # Libretro cores
 OEM_EMULATORS_LIBRETRO_RPI=" \
   retroarch \
-  2048 \
-  a5200 \
-  atari800 \
-  beetle-lynx \
-  beetle-pce-fast \
-  beetle-pcfx \
-  beetle-wswan \
-  bluemsx \
-  chailove \
-  desmume \
-  dosbox-pure \
-  ecwolf \
-  fbneo \
   flycast \
-  fuse-libretro \
-  gambatte \
   genesis-plus-gx \
   genesis-plus-gx-wide \
-  jumpnbump \
   mame2003-plus \
   mame2010 \
-  mgba \
-  mrboom \
-  mupen64plus-nx \
-  nestopia \
-  opera \
   pcsx_rearmed \
-  picodrive \
-  prboom \
-  prosystem \
-  sameboy \
-  scummvm \
   snes9x \
   snes9x2010 \
-  stella2014 \
-  superbroswar \
-  tyrquake \
-  vice-libretro \
-  virtualjaguar \
   yabause"
 
 # Libretro cores for RPi4
 OEM_EMULATORS_LIBRETRO_RPI_RPI4=" \
-  bsnes-libretro \
-  mame2016 \
-  mesen-x \
-  puae \
-  yabasanshiro"
+  mame2016"
 
 # Standalone emulators
 OEM_EMULATORS_STANDALONE_RPI=" \
   emulationstation \
-  amiberry \
-  dosbox-staging \
-  hatari \
-  openbor \
-  ppsspp"
+  ppsspp-libretro"
 
 # Extra frontends
 OEM_FRONTENDS_EXTRA_RPI=" \
