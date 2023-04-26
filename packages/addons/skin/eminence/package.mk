@@ -17,3 +17,14 @@ PKG_LONGDESC="skin.eminence"
 
 PKG_IS_ADDON="yes"
 PKG_ADDON_TYPE="xbmc.gui.skin"
+
+make_target() {
+  TexturePacker -dupecheck -input $(get_build_dir kodi)/addons/skin.estouchy/media/ -output Textures.xbt
+}
+
+addon() {
+  mkdir -p ${ADDON_BUILD}/${PKG_ADDON_ID}
+    cp -a $(get_build_dir kodi)/addons/skin.eminence/* ${ADDON_BUILD}/${PKG_ADDON_ID}
+	rm -rf ${ADDON_BUILD}/${PKG_ADDON_ID}/media/*
+	cp ${PKG_BUILD}/Textures.xbt ${ADDON_BUILD}/${PKG_ADDON_ID}/media
+}
