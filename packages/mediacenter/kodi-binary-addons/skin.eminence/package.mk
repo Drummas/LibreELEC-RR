@@ -16,4 +16,4 @@ PKG_SHORTDESC="skin.eminence"
 PKG_LONGDESC="skin.eminence"
 
 PKG_IS_ADDON="yes"
-PKG_ADDON_TYPE="xbmc.skin"
+PKG_ADDON_TYPE="xbmc.gui.skin"
