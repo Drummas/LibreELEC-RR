@@ -19,7 +19,7 @@ PKG_IS_ADDON="yes"
 PKG_ADDON_TYPE="xbmc.gui.skin"
 
 make_target() {
-  TexturePacker -dupecheck -input $(get_build_dir kodi)/addons/skin.estouchy/media/ -output Textures.xbt
+  TexturePacker -dupecheck -input $(get_build_dir kodi)/addons/skin.eminence/media/ -output Textures.xbt
 }
 
 addon() {
