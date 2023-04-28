@@ -8,7 +8,7 @@
 +        <label>Moonlight</label>
 +        <label2>Common Shortcut</label2>
 +        <defaultID>moonlight</defaultID>
-+        <icon>special://skin/extras/icons/weather.png</icon>
++        <icon>DefaultAddonGameMQT.png</icon>
 +        <action>RunScript(/usr/bin/moonlight-qt.py)</action>
 +    </shortcut>
     <shortcut>
