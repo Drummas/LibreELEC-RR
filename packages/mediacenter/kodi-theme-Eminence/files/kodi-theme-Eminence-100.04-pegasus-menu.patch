@@ -1,5 +1,5 @@
---- a/xml/Home.xml
-+++ b/xml/Home.xml
+--- a/16x9/Home.xml
++++ b/16x9/Home.xml
 @@ -910,6 +910,13 @@
  							<property name="id">spotify</property>
  							<visible>!Skin.HasSetting(HomeMenuNoSpotifyButton)</visible>
@@ -14,8 +14,8 @@
  					</content>
  				</control>
  				<control type="grouplist" id="700">
---- a/xml/SkinSettings.xml
-+++ b/xml/SkinSettings.xml
+--- a/16x9/SkinSettings.xml
++++ b/16x9/SkinSettings.xml
 @@ -225,6 +225,12 @@
  					<selected>!Skin.HasSetting(HomeMenuNoSpotifyButton)</selected>
  					<onclick>Skin.ToggleSetting(HomeMenuNoSpotifyButton)</onclick>
