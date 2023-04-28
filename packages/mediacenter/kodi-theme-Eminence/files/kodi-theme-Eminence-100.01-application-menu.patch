@@ -1,46 +1,21 @@
---- a/16x9/Home.xml
-+++ b/16x9/Home.xml
-@@ -896,6 +896,20 @@
- 							<property name="id">weather</property>
- 							<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
- 						</item>
-+						<item>
-+							<label>Brave</label>
-+							<onclick>RunScript(/usr/bin/app-brave-browser.py)</onclick>
-+							<thumb>DefaultAddonWebSkinBrave.png</thumb>
-+							<property name="id">brave</property>
-+							<visible>!Skin.HasSetting(HomeMenuNoBraveButton)</visible>
-+						</item>
-+						<item>
-+							<label>Spotify</label>
-+							<onclick>RunScript(/usr/bin/app-spotify.py)</onclick>
-+							<thumb>DefaultAddonMusicSpotify.png</thumb>
-+							<property name="id">spotify</property>
-+							<visible>!Skin.HasSetting(HomeMenuNoSpotifyButton)</visible>
-+						</item>
- 					</content>
- 				</control>
- 				<control type="grouplist" id="700">
---- a/16x9/SkinSettings.xml
-+++ b/16x9/SkinSettings.xml
-@@ -213,6 +213,18 @@
- 					<selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
- 					<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
- 				</control>
-+				<control type="radiobutton" id="61800">
-+					<label>Brave</label>
-+					<include>DefaultSettingButton</include>
-+					<selected>!Skin.HasSetting(HomeMenuNoBraveButton)</selected>
-+					<onclick>Skin.ToggleSetting(HomeMenuNoBraveButton)</onclick>
-+				</control>
-+				<control type="radiobutton" id="61900">
-+					<label>Spotify</label>
-+					<include>DefaultSettingButton</include>
-+					<selected>!Skin.HasSetting(HomeMenuNoSpotifyButton)</selected>
-+					<onclick>Skin.ToggleSetting(HomeMenuNoSpotifyButton)</onclick>
-+				</control>
- 			</control>
- 			<control type="image">
- 				<description>Dialog Header image</description>
-
-
+--- a/shortcuts/mainmenu.DATA.xml
++++ b/shortcuts/mainmenu.DATA.xml
+@@ -56,4 +56,18 @@
+        <icon>special://skin/extras/icons/weather.png</icon>
+        <action>ActivateWindow(Weather)</action>
+    </shortcut>
++    <shortcut>
++        <label>Brave</label>
++        <label2>Common Shortcut</label2>
++        <defaultID>brave</defaultID>
++        <icon>special://skin/extras/icons/weather.png</icon>
++        <action>RunScript(/usr/bin/app-brave-browser.py)</action>
++    </shortcut>
++    <shortcut>
++        <label>Spotify</label>
++        <label2>Common Shortcut</label2>
++        <defaultID>spotify</defaultID>
++        <icon>special://skin/extras/icons/weather.png</icon>
++        <action>RunScript(/usr/bin/app-spotify.py)</action>
++    </shortcut>
+    <shortcut>
