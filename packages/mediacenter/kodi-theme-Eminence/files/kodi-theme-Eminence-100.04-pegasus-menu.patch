@@ -1,31 +1,14 @@
---- a/16x9/Home.xml
-+++ b/16x9/Home.xml
-@@ -910,6 +910,13 @@
- 							<property name="id">spotify</property>
- 							<visible>!Skin.HasSetting(HomeMenuNoSpotifyButton)</visible>
- 						</item>
-+						<item>
-+							<label>Pegasus</label>
-+							<onclick>RunScript(/usr/bin/frontend-pegasus-fe.py)</onclick>
-+							<thumb>DefaultAddonGamePF.png</thumb>
-+							<property name="id">pegasus</property>
-+							<visible>!Skin.HasSetting(HomeMenuNoPegasusButton)</visible>
-+						</item>
- 					</content>
- 				</control>
- 				<control type="grouplist" id="700">
---- a/16x9/SkinSettings.xml
-+++ b/16x9/SkinSettings.xml
-@@ -225,6 +225,12 @@
- 					<selected>!Skin.HasSetting(HomeMenuNoSpotifyButton)</selected>
- 					<onclick>Skin.ToggleSetting(HomeMenuNoSpotifyButton)</onclick>
- 				</control>
-+				<control type="radiobutton" id="62200">
-+					<label>Pegasus</label>
-+					<include>DefaultSettingButton</include>
-+					<selected>!Skin.HasSetting(HomeMenuNoPegasusButton)</selected>
-+					<onclick>Skin.ToggleSetting(HomeMenuNoPegasusButton)</onclick>
-+				</control>
- 			</control>
- 			<control type="image">
- 				<description>Dialog Header image</description>
+--- a/shortcuts/mainmenu.DATA.xml
++++ b/shortcuts/mainmenu.DATA.xml
+@@ -56,4 +56,11 @@
+        <icon>special://skin/extras/icons/weather.png</icon>
+        <action>ActivateWindow(Weather)</action>
+    </shortcut>
++    <shortcut>
++        <label>Pegasus</label>
++        <label2>Common Shortcut</label2>
++        <defaultID>pegasus</defaultID>
++        <icon>special://skin/extras/icons/weather.png</icon>
++        <action>RunScript(/usr/bin/frontend-pegasus-fe.py)</action>
++    </shortcut>
+    <shortcut>
