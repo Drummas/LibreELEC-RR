@@ -8,7 +8,7 @@
 +        <label>Emulationstation</label>
 +        <label2>Common Shortcut</label2>
 +        <defaultID>emulationstation</defaultID>
-+        <icon>special://skin/extras/icons/weather.png</icon>
++        <icon>DefaultAddonGameES.png</icon>
 +        <action>RunScript(/usr/bin/frontend-emulationstation.py)</action>
 +    </shortcut>
     <shortcut>
