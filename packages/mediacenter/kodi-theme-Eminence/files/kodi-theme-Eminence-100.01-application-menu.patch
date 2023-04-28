@@ -1,5 +1,5 @@
---- a/xml/Home.xml
-+++ b/xml/Home.xml
+--- a/16x9/Home.xml
++++ b/16x9/Home.xml
 @@ -896,6 +896,20 @@
  							<property name="id">weather</property>
  							<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
@@ -21,8 +21,8 @@
  					</content>
  				</control>
  				<control type="grouplist" id="700">
---- a/xml/SkinSettings.xml
-+++ b/xml/SkinSettings.xml
+--- a/16x9/SkinSettings.xml
++++ b/16x9/SkinSettings.xml
 @@ -213,6 +213,18 @@
  					<selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
  					<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
