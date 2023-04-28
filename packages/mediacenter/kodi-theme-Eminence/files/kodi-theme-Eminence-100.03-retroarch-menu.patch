@@ -1,31 +1,14 @@
---- a/16x9/Home.xml
-+++ b/16x9/Home.xml
-@@ -910,6 +910,13 @@
- 							<property name="id">spotify</property>
- 							<visible>!Skin.HasSetting(HomeMenuNoSpotifyButton)</visible>
- 						</item>
-+						<item>
-+							<label>Retroarch</label>
-+							<onclick>RunScript(/usr/bin/frontend-retroarch.py)</onclick>
-+							<thumb>DefaultAddonGameRA.png</thumb>
-+							<property name="id">retroarch</property>
-+							<visible>!Skin.HasSetting(HomeMenuNoRetroarchButton)</visible>
-+						</item>
- 					</content>
- 				</control>
- 				<control type="grouplist" id="700">
---- a/16x9/SkinSettings.xml
-+++ b/16x9/SkinSettings.xml
-@@ -225,6 +225,12 @@
- 					<selected>!Skin.HasSetting(HomeMenuNoSpotifyButton)</selected>
- 					<onclick>Skin.ToggleSetting(HomeMenuNoSpotifyButton)</onclick>
- 				</control>
-+				<control type="radiobutton" id="62100">
-+					<label>Retroarch</label>
-+					<include>DefaultSettingButton</include>
-+					<selected>!Skin.HasSetting(HomeMenuNoRetroarchButton)</selected>
-+					<onclick>Skin.ToggleSetting(HomeMenuNoRetroarchButton)</onclick>
-+				</control>
- 			</control>
- 			<control type="image">
- 				<description>Dialog Header image</description>
+--- a/shortcuts/mainmenu.DATA.xml
++++ b/shortcuts/mainmenu.DATA.xml
+@@ -56,4 +56,11 @@
+        <icon>special://skin/extras/icons/weather.png</icon>
+        <action>ActivateWindow(Weather)</action>
+    </shortcut>
++    <shortcut>
++        <label>Retroarch</label>
++        <label2>Common Shortcut</label2>
++        <defaultID>retroarch</defaultID>
++        <icon>special://skin/extras/icons/weather.png</icon>
++        <action>RunScript(/usr/bin/frontend-retroarch.py)</action>
++    </shortcut>
+    <shortcut>
