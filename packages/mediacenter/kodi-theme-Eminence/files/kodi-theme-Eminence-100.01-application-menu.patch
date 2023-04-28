@@ -8,14 +8,14 @@
 +        <label>Brave</label>
 +        <label2>Common Shortcut</label2>
 +        <defaultID>brave</defaultID>
-+        <icon>special://skin/extras/icons/weather.png</icon>
++        <icon>DefaultAddonWebSkinBrave.png</icon>
 +        <action>RunScript(/usr/bin/app-brave-browser.py)</action>
 +    </shortcut>
 +    <shortcut>
 +        <label>Spotify</label>
 +        <label2>Common Shortcut</label2>
 +        <defaultID>spotify</defaultID>
-+        <icon>special://skin/extras/icons/weather.png</icon>
++        <icon>DefaultAddonMusicSpotify.png</icon>
 +        <action>RunScript(/usr/bin/app-spotify.py)</action>
 +    </shortcut>
     <shortcut>
