@@ -8,7 +8,7 @@
 +        <label>Pegasus</label>
 +        <label2>Common Shortcut</label2>
 +        <defaultID>pegasus</defaultID>
-+        <icon>special://skin/extras/icons/weather.png</icon>
++        <icon>DefaultAddonGamePF.png</icon>
 +        <action>RunScript(/usr/bin/frontend-pegasus-fe.py)</action>
 +    </shortcut>
     <shortcut>
