@@ -21,8 +21,3 @@ PKG_TOOLCHAIN="manual"
 PKG_IS_ADDON="yes"
 PKG_ADDON_NAME="Eminence"
 PKG_ADDON_TYPE="xbmc.gui.skin"
-
-#addon() {
-#  mkdir -p ${ADDON_BUILD}/${PKG_ADDON_ID}
-#    cp -a $(get_build_dir kodi)/addons/skin.eminence/* ${ADDON_BUILD}/${PKG_ADDON_ID}
-#}
