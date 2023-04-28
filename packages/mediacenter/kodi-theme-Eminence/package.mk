@@ -6,14 +6,14 @@ PKG_VERSION="1.0"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.kodi.tv"
 PKG_URL=""
-PKG_DEPENDS_TARGET="kodi"
+PKG_DEPENDS_TARGET="kodi eminence"
 PKG_DEPENDS_UNPACK="kodi"
 PKG_LONGDESC="Kodi Mediacenter Eminence theme."
 PKG_TOOLCHAIN="manual"
 
 makeinstall_target() {
-  mkdir -p ${INSTALL}/usr/share/kodi/addons/
-    cp -a $(get_install_dir kodi)/.noinstall/skin.eminence ${INSTALL}/usr/share/kodi/addons/
+  mkdir -p ${INSTALL}/usr/share/kodi/addons/skin.eminence
+    cp -a $(get_build_dir eminence)/* ${INSTALL}/usr/share/kodi/addons/skin.eminence
 
   # Add Brave & Spotify shortcuts to menu
   if [ ! "${OEM_APPLICATIONS}" = "no" ] && [ "$PROJECT" = "Generic" ]; then
