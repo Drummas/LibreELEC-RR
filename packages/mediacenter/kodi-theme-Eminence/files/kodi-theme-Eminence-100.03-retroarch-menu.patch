@@ -8,7 +8,7 @@
 +        <label>Retroarch</label>
 +        <label2>Common Shortcut</label2>
 +        <defaultID>retroarch</defaultID>
-+        <icon>special://skin/extras/icons/weather.png</icon>
++        <icon>DefaultAddonGameRA.png</icon>
 +        <action>RunScript(/usr/bin/frontend-retroarch.py)</action>
 +    </shortcut>
     <shortcut>
