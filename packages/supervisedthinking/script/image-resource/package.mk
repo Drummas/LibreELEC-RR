@@ -2,7 +2,7 @@
 # Copyright (C) 2018-present BigNoid, marcelveldt, SiLVO, anxdpanic
 
 
-PKG_NAME="imageresource"
+PKG_NAME="script.image.resource.select-master"
 PKG_VERSION="master"
 PKG_REV="1"
 PKG_ARCH="any"
