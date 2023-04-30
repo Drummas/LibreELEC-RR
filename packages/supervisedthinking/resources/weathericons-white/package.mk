@@ -3,7 +3,7 @@
 # Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
 
 
-PKG_NAME="weathericons-white"
+PKG_NAME="resource.images.weathericons.white-master"
 PKG_VERSION="master"
 PKG_REV="1"
 PKG_ARCH="any"
