@@ -3,7 +3,7 @@
 # Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
 
 
-PKG_NAME="themoviedb"
+PKG_NAME="plugin.video.themoviedb.helper"
 PKG_VERSION="v5.1.11"
 PKG_REV="1"
 PKG_ARCH="any"
