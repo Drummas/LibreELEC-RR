@@ -18,30 +18,30 @@ makeinstall_target() {
   # Add Brave & Spotify shortcuts to menu
   if [ ! "${OEM_APPLICATIONS}" = "no" ] && [ "$PROJECT" = "Generic" ]; then
     echo "### Adding Brave & Spotify to Eminence menu ###"
-    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.01-application-menu.patch
+    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -l -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.01-application-menu.patch
   fi
 
   # Add Moonlight shortcut to menu 
   if [ ! "${OEM_STREAMING_CLIENTS}" = "no" ]; then
     echo "### Adding Moonlight-Qt to Eminence menu ###"
-    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.05-moonlight-qt-menu.patch
+    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -l -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.05-moonlight-qt-menu.patch
   fi
 
   # Add Emulationstation shortcut to menu 
   if [ ! "${OEM_EMULATORS}" = "no" ]; then
     echo "### Adding Emulationstation to Eminence menu ###"
-    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.02-emulationstation-menu.patch
+    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -l -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.02-emulationstation-menu.patch
   fi
 
   # Add Retroarch shortcut to menu 
   if [ ! "${OEM_LIBRETRO}" = "no" ]; then
     echo "### Adding Retroarch to Eminence menu ###"
-    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.03-retroarch-menu.patch
+    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -l -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.03-retroarch-menu.patch
   fi
 
   # Add Pegasus Frontend shortcut to menu 
   if [ ! "${OEM_FRONTENDS_EXTRA}" = "no" ]; then
     echo "### Adding Pegasus-Frontend to Eminence menu ###"
-    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.04-pegasus-menu.patch
+    patch -d ${INSTALL}/usr/share/kodi/addons/skin.eminence -l -p1 < ${PKG_DIR}/files/kodi-theme-Eminence-100.04-pegasus-menu.patch
   fi
 }
